@@ -20,6 +20,7 @@ import { useAuth } from "../utils/AuthContext";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { RootStackParamList } from "../App";
 import { useFocusEffect } from "@react-navigation/native";
+import RoleBasedBottomNav from "../component/rolebasedNav";
 
 type NotificationScreenNavigationProp = NativeStackNavigationProp<
   RootStackParamList,
@@ -605,6 +606,7 @@ const NotificationScreen: React.FC<{
           }
         />
       </SafeAreaView>
+      <RoleBasedBottomNav navigation={navigation} />
     </View>
   );
 };
