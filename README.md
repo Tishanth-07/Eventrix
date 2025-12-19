@@ -181,22 +181,22 @@ This project provides a **secure and dynamic way to deliver technology news and 
 
 <table>
   <tr>
-    <td><img src="frontend/assets/Screenshots/Screenshot1.jpeg" height="420" /></td>
-    <td><img src="frontend/assets/Screenshots/Screenshot2.jpeg" height="420" /></td>
-    <td><img src="frontend/assets/Screenshots/Screenshot3.jpeg" height="420" /></td>
+    <td><img src="Frontend/assets/Screenshots/Screenshot1.jpeg" height="420" /></td>
+    <td><img src="Frontend/assets/Screenshots/Screenshot2.jpeg" height="420" /></td>
+    <td><img src="Frontend/assets/Screenshots/Screenshot3.jpeg" height="420" /></td>
   </tr>
   <tr>
-    <td><img src="frontend/assets/Screenshots/Screenshot4.jpeg" height="420" /></td>
-    <td><img src="frontend/assets/Screenshots/Screenshot5.jpeg" height="420" /></td>
-    <td><img src="frontend/assets/Screenshots/Screenshot6.jpeg" height="420" /></td>
+    <td><img src="Frontend/assets/Screenshots/Screenshot4.jpeg" height="420" /></td>
+    <td><img src="Frontend/assets/Screenshots/Screenshot5.jpeg" height="420" /></td>
+    <td><img src="Frontend/assets/Screenshots/Screenshot6.jpeg" height="420" /></td>
   </tr>
   <tr>
-    <td><img src="frontend/assets/Screenshots/Screenshot7.jpeg" height="420" /></td>
-    <td><img src="frontend/assets/Screenshots/Screenshot8.jpeg" height="420" /></td>
-    <td><img src="frontend/assets/Screenshots/Screenshot9.jpeg" height="420" /></td>
-    <td><img src="frontend/assets/Screenshots/Screenshot10.jpeg" height="420" /></td>
-    <td><img src="frontend/assets/Screenshots/Screenshot11.jpeg" height="420" /></td>
-    <td><img src="frontend/assets/Screenshots/Screenshot12.jpeg" height="420" /></td>
+    <td><img src="Frontend/assets/Screenshots/Screenshot7.jpeg" height="420" /></td>
+    <td><img src="Frontend/assets/Screenshots/Screenshot8.jpeg" height="420" /></td>
+    <td><img src="Frontend/assets/Screenshots/Screenshot9.jpeg" height="420" /></td>
+    <td><img src="Frontend/assets/Screenshots/Screenshot10.jpeg" height="420" /></td>
+    <td><img src="Frontend/assets/Screenshots/Screenshot11.jpeg" height="420" /></td>
+    <td><img src="Frontend/assets/Screenshots/Screenshot12.jpeg" height="420" /></td>
   </tr>
 </table>
 
