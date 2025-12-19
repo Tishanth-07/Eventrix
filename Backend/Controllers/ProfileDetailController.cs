@@ -204,4 +204,3 @@ public async Task<IActionResult> UpdateMyProfile([FromBody] ProfileUpdateRequest
 
     }
 }
-

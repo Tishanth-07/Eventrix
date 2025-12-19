@@ -2,19 +2,22 @@ using MongoDB.Driver;
 using Backend.Models;
 using Backend.Settings;
 using Microsoft.Extensions.Options;
-
+using MongoDB.Bson;
+    
 namespace Backend.Services
 {
     public class ProfileDetailService
     {
         private readonly IMongoCollection<AppUser> _userCollection;
         private readonly IMongoCollection<Event> _eventCollection;
+        private readonly IMongoCollection<BookmarkModel> _bookmarkCollection;
 
         public ProfileDetailService(IOptions<MongoDbSettings> settings, IMongoClient client)
         {
             var database = client.GetDatabase(settings.Value.DatabaseName);
             _userCollection = database.GetCollection<AppUser>("Users"); // Use AppUser
-            _eventCollection = database.GetCollection<Event>("events"); // Events collection
+            _eventCollection = database.GetCollection<Event>("events");             // Events collection
+            _bookmarkCollection = database.GetCollection<BookmarkModel>("bookmarks"); 
         }
 
         public async Task<AppUser?> GetUserByIdAsync(string userId)

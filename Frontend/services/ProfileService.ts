@@ -71,6 +71,10 @@ export const ProfileService = {
     return authGet<Post[]>("/ProfileDetail/my-events");
   },
 
+  getBookmarkedPosts: async (): Promise<Posts[]> => {
+    return authGet<Post[]>("/ProfileDetail/my-bookmarks");
+  },
+
   getPostCount: async (): Promise<number> => {
     const posts = await authGet<Post[]>("/ProfileDetail/my-events");
     return posts.length;
@@ -93,3 +97,6 @@ export const updateProfile = async (
     return null;
   }
 };
+
+
+
