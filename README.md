@@ -194,6 +194,8 @@ This project provides a **secure and dynamic way to deliver technology news and 
     <td><img src="Frontend/assets/Screenshots/Screenshot7.jpeg" height="420" /></td>
     <td><img src="Frontend/assets/Screenshots/Screenshot8.jpeg" height="420" /></td>
     <td><img src="Frontend/assets/Screenshots/Screenshot9.jpeg" height="420" /></td>
+  </tr>
+  <tr>
     <td><img src="Frontend/assets/Screenshots/Screenshot10.jpeg" height="420" /></td>
     <td><img src="Frontend/assets/Screenshots/Screenshot11.jpeg" height="420" /></td>
     <td><img src="Frontend/assets/Screenshots/Screenshot12.jpeg" height="420" /></td>
