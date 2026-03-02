@@ -1,205 +1,385 @@
-<h1 align="center">  EventTrix – Mobile-First Tech News & Event Platform </h1>
+<div align="center">
 
-<p align="center"> <img src="/Frontend/assets/eventTrix.png" alt="EventTrix Logo" width="120"/> </p>
+# 🏆 Top 5 Finalist — IEEE HackElite 2.0 (2025)
 
-**EventTrix** is a modern mobile application designed to deliver **technology news and updates** to students, companies, and IT professionals. The app allows IT solutions providers to post updates, while users can **subscribe, filter content, and receive notifications in real-time**.
+<img src="Frontend/assets/eventTrix.png" alt="EventTrix Logo" width="140"/>
 
----
+# EventTrix
+### Mobile-First Tech News & Event Intelligence Platform
 
-## 🔹Project Overview
+[![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactnative.dev/)
+[![ASP.NET](https://img.shields.io/badge/ASP.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)](https://jwt.io/)
+[![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=for-the-badge&logo=socketdotio&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
 
-EventTrix is a collaborative project developed for IEEE HackElite 2.0 – 2025.
-The platform bridges the gap between students, IT professionals, and technology solution providers by delivering curated, real-time technical news and event updates.
+> **Recognized among the Top 5 projects** at IEEE HackElite 2.0 — a national-level competitive hackathon.  
+> EventTrix bridges the gap between IT professionals, students, and technology solution providers through real-time, curated tech intelligence.
 
-The system enables:
-- Companies & IT solution providers to publish updates.
-- Users to subscribe to relevant topics and companies.
-- Real-time notifications using WebSockets.
-- Secure role-based access.
-
----
-
-## 🔹Features
-
-### User Authentication
-- Register securely with a username and password.
-- Login using **JWT authentication** to ensure secure access.
-- Passwords are hashed using **bcrypt** for security.
-- Role-based access (User / Provider / Admin).
-- Email verification via SMTP.
-
-### News Feed & Content Management
-- IT solutions providers can post technology news and updates.
-- Users can **subscribe** to specific companies, categories, or topics.
-- Content can be **filtered** by category, date, or popularity for efficient browsing.
-- Personalized feeds based on subscriptions.
-
-### Notifications & Real-Time Updates
-- Receive **push notifications** for new posts from subscribed sources.
-- **WebSocket integration** ensures instant updates and dynamic content refresh.
-
-### User Personalization
-- Configure your preferences for notifications and subscriptions.
-- Manage your account settings, including updating username or password.
-
-### Admin & IT Solution Features
-- Admins and IT solution providers can manage posts, categories, and subscriptions efficiently.
-- Ensure proper content delivery and manage user subscriptions.
+</div>
 
 ---
 
-## 🔹Tech Stack
+## 📋 Table of Contents
 
-### Frontend
-- React Native
-- Expo Go
-- Axios
-
-### Backend
-- ASP.NET (C#)
-- RESTful APIs
-- JWT Authentication
-- WebSockets
-
-### Database
-- MongoDB
-
-### Security & Services
-- bcrypt (password hashing)
-- SMTP (email verification)
-- JWT tokens (authorization)
+- [Achievement](#-achievement)
+- [Project Overview](#-project-overview)
+- [Live Demo & Screenshots](#-ui--screenshots)
+- [Key Features](#-key-features)
+- [Security Implementation](#-security-implementation)
+- [System Architecture](#-system-architecture)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Getting Started](#-getting-started)
+- [API Endpoints](#-api-reference)
+- [What I Learned](#-what-i-learned)
 
 ---
 
-## 🔹Project Structure
+## 🏆 Achievement
 
-```
-HACKELITE2.0/
-├── README.md
-├── Frontend/
-│   ├── devices.json
-│   ├── README.md
-│   ├── assets/
-│   ├── component/
-│   ├── node_modules/
-│   ├── screens/
-│   ├── services/
-│   ├── styles/
-│   ├── utils/
-│   ├── AuthContext.tsx
-│   ├── .env
-│   ├── app.config.js
-│   ├── App.tsx
-│   ├── index.ts
-│   ├── package-lock.json
-│   ├── package.json
-│   ├── tsconfig.json
-│   └── .gitignore
-├── Backend/
-│   ├── bin/
-│   ├── Controllers/
-│   ├── Filters/
-│   ├── Hubs/
-│   ├── Models/
-│   ├── obj/
-│   ├── Properties/
-│   │   └── launchSettings.json
-│   ├── Scripts/
-│   ├── Services/
-│   ├── Settings/
-│   ├── wwwroot/
-│   ├── appsettings.Development.json
-│   ├── appsettings.json
-│   ├── appsettings.local.json
-│   ├── Backend.csproj
-│   ├── Backend.http
-│   ├── build_output.txt
-│   ├── msbuild.log
-│   └── Program.cs
-└── hackelite.sln
-```
----
+| Award | Event | Year |
+|---|---|---|
+| 🥇 **Top 5 Finalist** | IEEE HackElite 2.0 — National Hackathon | 2025 |
 
-## 🔹Getting Started
+EventTrix was selected among the **Top 5 projects** out of a highly competitive pool at IEEE HackElite 2.0 — a nationally recognized hackathon organized by the IEEE Student Branch. The judging panel evaluated projects on **innovation, technical depth, real-world applicability, and system design**.
 
-### Install & Run
-- Use **Expo Go** to run the mobile app on iOS or Android devices.
-- Make sure the backend **.NET API** is running and connected to **MongoDB**.
-
-### Register & Verify Account
-- Open the app and create a new account.
-- Verification emails are sent via **SMTP** to confirm user registration.
-- Enter the verification code to activate your account.
-
-### Browse & Subscribe
-- Explore technology news posted by companies or IT solutions providers.
-- Subscribe to categories, topics, or companies to receive targeted updates.
-
-### Manage Preferences
-- Configure notifications and subscription settings to match your interests.
-- Update personal credentials securely.
-
-### Posting News (For IT Solution Providers)
-- Login as a provider/admin.
-- Create, update, or delete news posts.
-- Organize posts by categories for better visibility to users.
+> **Why it stood out:** Full-stack architecture built under tight time constraints, featuring real-time WebSocket communication, role-based access control, and a production-grade mobile UI — all designed and implemented within the hackathon window.
 
 ---
 
-## 🔹Run Project 
+## 🔍 Project Overview
 
-### Run Backend (.NET API)
-`dotnet restore`
-`dotnet run`
+**EventTrix** is a mobile-first platform that delivers curated technology news and event updates to students, IT professionals, and companies in real time.
 
-Backend runs at: `https://localhost:5179`
-Ensure MongoDB is running and connected.
+The platform operates across **three user roles**:
 
-### Run Mobile App (Expo)
-`cd Frontend`
-`npm install`
-`expo start`
+| Role | Capabilities |
+|---|---|
+| **User** | Browse feed, subscribe to topics/companies, receive push notifications |
+| **IT Solution Provider** | Publish news posts, manage categories, reach targeted subscribers |
+| **Admin** | Manage users, content, and platform integrity |
 
-Scan QR using Expo Go
-Works on Android & iOS devices
+**Core Problem Solved:** Professionals and students waste significant time sourcing relevant tech news across fragmented platforms. EventTrix centralizes this into a subscription-based, real-time feed — personalized to each user's interests.
 
 ---
 
-## 🔹Security Notes
-- All sensitive user data, including passwords, are securely hashed.
-- Email verification ensures only valid users can access the app.
-- **JWT tokens** protect endpoints from unauthorized access.
-- Users control their subscriptions and notification preferences securely.
+## 📱 UI & Screenshots
 
----
-
-This project provides a **secure and dynamic way to deliver technology news and updates** to students, companies, and IT professionals efficiently.
-
----
-
-## 🔹Screenshots
+> Built mobile-first with React Native & Expo Go — optimized for Android and iOS.
 
 <table>
   <tr>
-    <td><img src="Frontend/assets/Screenshots/Screenshot1.jpeg" height="420" /></td>
-    <td><img src="Frontend/assets/Screenshots/Screenshot2.jpeg" height="420" /></td>
-    <td><img src="Frontend/assets/Screenshots/Screenshot3.jpeg" height="420" /></td>
+    <td align="center"><b>Login Screen</b></td>
+    <td align="center"><b>Registration</b></td>
+    <td align="center"><b>Email Verification</b></td>
   </tr>
   <tr>
-    <td><img src="Frontend/assets/Screenshots/Screenshot4.jpeg" height="420" /></td>
-    <td><img src="Frontend/assets/Screenshots/Screenshot5.jpeg" height="420" /></td>
-    <td><img src="Frontend/assets/Screenshots/Screenshot6.jpeg" height="420" /></td>
+    <td><img src="Frontend/assets/Screenshots/Screenshot1.jpeg" height="400"/></td>
+    <td><img src="Frontend/assets/Screenshots/Screenshot2.jpeg" height="400"/></td>
+    <td><img src="Frontend/assets/Screenshots/Screenshot3.jpeg" height="400"/></td>
   </tr>
   <tr>
-    <td><img src="Frontend/assets/Screenshots/Screenshot7.jpeg" height="420" /></td>
-    <td><img src="Frontend/assets/Screenshots/Screenshot8.jpeg" height="420" /></td>
-    <td><img src="Frontend/assets/Screenshots/Screenshot9.jpeg" height="420" /></td>
+    <td align="center"><b>News Feed</b></td>
+    <td align="center"><b>Subscriptions</b></td>
+    <td align="center"><b>Notifications</b></td>
   </tr>
   <tr>
-    <td><img src="Frontend/assets/Screenshots/Screenshot10.jpeg" height="420" /></td>
-    <td><img src="Frontend/assets/Screenshots/Screenshot11.jpeg" height="420" /></td>
-    <td><img src="Frontend/assets/Screenshots/Screenshot12.jpeg" height="420" /></td>
+    <td><img src="Frontend/assets/Screenshots/Screenshot4.jpeg" height="400"/></td>
+    <td><img src="Frontend/assets/Screenshots/Screenshot5.jpeg" height="400"/></td>
+    <td><img src="Frontend/assets/Screenshots/Screenshot6.jpeg" height="400"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Provider Dashboard</b></td>
+    <td align="center"><b>Post Management</b></td>
+    <td align="center"><b>User Settings</b></td>
+  </tr>
+  <tr>
+    <td><img src="Frontend/assets/Screenshots/Screenshot7.jpeg" height="400"/></td>
+    <td><img src="Frontend/assets/Screenshots/Screenshot8.jpeg" height="400"/></td>
+    <td><img src="Frontend/assets/Screenshots/Screenshot9.jpeg" height="400"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Category Filter</b></td>
+    <td align="center"><b>Admin Panel</b></td>
+    <td align="center"><b>Profile Management</b></td>
+  </tr>
+  <tr>
+    <td><img src="Frontend/assets/Screenshots/Screenshot10.jpeg" height="400"/></td>
+    <td><img src="Frontend/assets/Screenshots/Screenshot11.jpeg" height="400"/></td>
+    <td><img src="Frontend/assets/Screenshots/Screenshot12.jpeg" height="400"/></td>
   </tr>
 </table>
 
 ---
+
+## ✨ Key Features
+
+### 🔐 Authentication & Identity
+- Secure registration with **SMTP-based email verification** — no unverified accounts access the platform
+- Login protected by **JWT (JSON Web Token)** — stateless, scalable, and industry-standard
+- **Role-Based Access Control (RBAC)** — Users, Providers, and Admins have isolated permissions
+
+### 📰 Personalized News Feed
+- IT providers post curated technology news and event updates
+- Users **subscribe to specific companies, categories, or topics**
+- Content is filterable by **category, date, and popularity**
+- Feed is dynamically personalized to each user's subscription profile
+
+### ⚡ Real-Time Notifications
+- **WebSocket integration** (via ASP.NET SignalR Hubs) delivers instant content updates
+- Users receive **push notifications** the moment a subscribed source posts
+- No polling — pure event-driven architecture for minimal latency
+
+### 🛠️ Provider & Admin Tooling
+- Providers can create, edit, and delete posts with category tagging
+- Admins manage users, content moderation, and platform-wide settings
+- Full CRUD operations across all entities via RESTful APIs
+
+### 👤 User Preferences
+- Manage notification settings and subscription preferences
+- Securely update username and password at any time
+
+---
+
+## 🔒 Security Implementation
+
+Security was treated as a first-class concern throughout the system design — not an afterthought.
+
+### Password Hashing — bcrypt
+All user passwords are hashed using **bcrypt** before storage. bcrypt is intentionally slow (work factor configurable), making brute-force and rainbow table attacks computationally infeasible.
+
+```
+User Password → bcrypt (salt + hash, cost factor 12) → Stored Hash in MongoDB
+Login Attempt → bcrypt.Verify(inputPassword, storedHash) → Access Granted / Denied
+```
+
+### JWT Authentication & Token Lifecycle
+Authentication uses **signed JWT tokens** — stateless and scalable without server-side sessions.
+
+```
+Login Success → JWT Issued (Header.Payload.Signature)
+              ↳ Payload: { userId, role, exp (expiration timestamp) }
+              ↳ Signed with HMAC-SHA256 secret key (server-side only)
+
+Each API Request → Token extracted from Authorization: Bearer <token>
+                 → Signature verified server-side
+                 → Expiration (exp) checked — rejected if expired
+                 → Role claim checked against endpoint authorization policy
+```
+
+**Token Expiration:** Tokens have a defined TTL (Time-To-Live). Expired tokens are automatically rejected by the ASP.NET middleware, forcing re-authentication — minimizing the blast radius of any token compromise.
+
+### Role-Based Access Control (RBAC)
+Endpoints are decorated with authorization policies. A regular **User** JWT cannot access **Provider** or **Admin** routes — enforced at the API controller level, not just the frontend.
+
+```csharp
+[Authorize(Roles = "Admin")]
+[HttpDelete("users/{id}")]
+public IActionResult DeleteUser(string id) { ... }
+```
+
+### Email Verification
+New accounts are inactive until the user verifies their email via a **time-sensitive SMTP verification code**. This prevents fake account creation and ensures communication channels are valid.
+
+---
+
+## 🏗️ System Architecture
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                     CLIENT LAYER                        │
+│         React Native App (Expo Go)                      │
+│    Screens → Services (Axios) → AuthContext (JWT)       │
+└──────────────────────┬──────────────────────────────────┘
+                       │ HTTPS / WebSocket (WSS)
+┌──────────────────────▼──────────────────────────────────┐
+│                    BACKEND LAYER                         │
+│             ASP.NET Web API (C#)                        │
+│  Controllers → Services → JWT Middleware → SignalR Hubs │
+└──────────────────────┬──────────────────────────────────┘
+                       │
+┌──────────────────────▼──────────────────────────────────┐
+│                   DATA LAYER                             │
+│                  MongoDB                                 │
+│     Users | Posts | Categories | Subscriptions          │
+└─────────────────────────────────────────────────────────┘
+```
+
+**Key architectural decisions:**
+- **Stateless backend** — JWT eliminates server-side session storage; horizontally scalable
+- **SignalR Hubs** — ASP.NET's abstraction over WebSockets for real-time bi-directional communication
+- **MongoDB** — Document model fits flexible post/subscription schemas without rigid relational joins
+- **Axios interceptors** — Centralized token injection and 401 handling on the mobile client
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology | Purpose |
+|---|---|---|
+| Mobile Frontend | React Native + Expo Go | Cross-platform iOS/Android UI |
+| HTTP Client | Axios | API communication + interceptors |
+| Backend Framework | ASP.NET (C#) | RESTful API + business logic |
+| Real-Time | ASP.NET SignalR (WebSockets) | Live notifications & feed updates |
+| Database | MongoDB | Flexible document storage |
+| Authentication | JWT (HMAC-SHA256) | Stateless, secure token auth |
+| Password Security | bcrypt | Adaptive hashing, brute-force resistant |
+| Email Service | SMTP | Account verification emails |
+| Language | TypeScript (Frontend) / C# (Backend) | Type-safe, production-grade code |
+
+---
+
+## 📁 Project Structure
+
+```
+HACKELITE2.0/
+├── README.md
+├── hackelite.sln
+├── Frontend/                          # React Native Mobile App
+│   ├── App.tsx                        # Root application component
+│   ├── AuthContext.tsx                # Global authentication state
+│   ├── index.ts                       # App entry point
+│   ├── app.config.js                  # Expo configuration
+│   ├── assets/                        # Images, fonts, icons
+│   ├── component/                     # Reusable UI components
+│   ├── screens/                       # App screens (Login, Feed, Profile...)
+│   ├── services/                      # Axios API service layer
+│   ├── styles/                        # Global style definitions
+│   ├── utils/                         # Helper functions
+│   ├── package.json
+│   └── tsconfig.json
+└── Backend/                           # ASP.NET Web API
+    ├── Program.cs                     # App entry point & middleware config
+    ├── Controllers/                   # API route controllers (RBAC applied)
+    ├── Services/                      # Business logic layer
+    ├── Models/                        # MongoDB document models
+    ├── Hubs/                          # SignalR WebSocket hubs
+    ├── Filters/                       # Custom action filters
+    ├── Settings/                      # App configuration bindings
+    ├── Scripts/                       # Utility scripts
+    ├── appsettings.json               # App configuration
+    └── Backend.csproj                 # .NET project file
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+| Tool | Version |
+|---|---|
+| .NET SDK | 8.0+ |
+| Node.js | 18+ |
+| MongoDB | 6.0+ (local or Atlas) |
+| Expo Go App | Latest (on device) |
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/eventtrix.git
+cd HACKELITE2.0
+```
+
+### 2. Configure the Backend
+
+```bash
+# Update appsettings.local.json with your values
+{
+  "MongoDB": {
+    "ConnectionString": "mongodb://localhost:27017",
+    "DatabaseName": "EventTrix"
+  },
+  "Jwt": {
+    "Secret": "your-secret-key-min-32-chars",
+    "ExpirationHours": 24
+  },
+  "Smtp": {
+    "Host": "smtp.gmail.com",
+    "Port": 587,
+    "Username": "your-email@gmail.com",
+    "Password": "your-app-password"
+  }
+}
+```
+
+### 3. Run the Backend API
+
+```bash
+cd Backend
+dotnet restore
+dotnet run
+```
+
+> ✅ Backend runs at: `https://localhost:5179`  
+> Ensure MongoDB is running and connected before starting.
+
+### 4. Configure & Run the Mobile App
+
+```bash
+cd Frontend
+npm install
+
+# Update .env with your backend URL
+EXPO_PUBLIC_API_URL=https://your-local-ip:5179
+```
+
+```bash
+expo start
+```
+
+> 📱 Scan the QR code with **Expo Go** on your Android or iOS device.  
+> Ensure your mobile device and development machine are on the same network.
+
+---
+
+## 📡 API Reference
+
+| Method | Endpoint | Role | Description |
+|---|---|---|---|
+| `POST` | `/api/auth/register` | Public | Register new account |
+| `POST` | `/api/auth/login` | Public | Login, receive JWT |
+| `POST` | `/api/auth/verify` | Public | Email verification |
+| `GET` | `/api/posts` | User | Get personalized feed |
+| `POST` | `/api/posts` | Provider | Create a new post |
+| `PUT` | `/api/posts/{id}` | Provider | Update post |
+| `DELETE` | `/api/posts/{id}` | Provider/Admin | Delete post |
+| `POST` | `/api/subscriptions` | User | Subscribe to topic/company |
+| `DELETE` | `/api/subscriptions/{id}` | User | Unsubscribe |
+| `GET` | `/api/admin/users` | Admin | List all users |
+| `DELETE` | `/api/admin/users/{id}` | Admin | Remove a user |
+
+All protected endpoints require: `Authorization: Bearer <JWT_TOKEN>`
+
+---
+
+## 💡 What I Learned
+
+Building EventTrix under hackathon pressure reinforced several engineering fundamentals:
+
+- **Designing for real-time at scale** — WebSockets require a different mental model than REST; managing connection state, reconnection logic, and event broadcasting was a deep learning curve
+- **Security-by-default mindset** — Implementing RBAC, token expiration, and bcrypt from day one rather than retrofitting security post-build
+- **Mobile-backend contract design** — Defining clear API contracts (types, error codes, response shapes) between the React Native client and ASP.NET backend prevented integration bugs late in the build
+- **Expo Go limitations** — Navigating Expo's managed workflow constraints (native modules, push notification configs) taught pragmatic problem-solving under time pressure
+- **Team velocity under pressure** — Coordinating frontend and backend work streams simultaneously with Git branching and clear interface contracts
+
+---
+
+## 👨‍💻 Built By
+
+Developed for **IEEE HackElite 2.0 — 2025**  
+A nationally competitive IEEE hackathon focused on innovative software solutions.
+
+> *"Top 5 Finalist — Built from scratch in under 24 hours."*
+
+---
+
+<div align="center">
+
+**If this project impressed you, feel free to ⭐ star the repo and connect!**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/your-username)
+
+</div>
